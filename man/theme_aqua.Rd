@@ -14,10 +14,3 @@ theme_aqua(base_size = 12, base_family = "")
 \description{
 A custom theme for ggplot2 following the aqua report style for figures
 }
-\examples{
-p <- ggplot2::ggplot(mtcars) +
-  ggplot2::geom_point(ggplot2::aes(x = wt, y = mpg, colour = factor(gear))) +
-  ggplot2::facet_wrap(~am)
-p + theme_aqua()
-
-}

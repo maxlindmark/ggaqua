@@ -1,18 +1,11 @@
 #' A custom theme for ggplot2 following the aqua report style for figures
 #'
-#'
 #' @param base_size Base size
 #' @param base_family Base family
 #'
-#' @importFrom ggplot2 element_text element_rect element_line element_blank theme_bw theme
+#' @importFrom ggplot2 element_text element_rect element_blank element_line theme_bw margin theme
 #'   rel
 #' @importFrom grid unit
-#'
-#' @examples
-#' p <- ggplot2::ggplot(mtcars) +
-#'   ggplot2::geom_point(ggplot2::aes(x = wt, y = mpg, colour = factor(gear))) +
-#'   ggplot2::facet_wrap(~am)
-#' p + theme_aqua()
 #'
 #' @export
 
