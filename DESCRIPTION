@@ -1,4 +1,4 @@
-Package: ggaqua2
+Package: ggaqua
 Type: Package
 Title: Helper Functions for ggplot2
 Version: 0.1.0
