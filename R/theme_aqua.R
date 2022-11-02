@@ -12,11 +12,11 @@
 #' p <- ggplot2::ggplot(mtcars) +
 #'   ggplot2::geom_point(ggplot2::aes(x = wt, y = mpg, colour = factor(gear))) +
 #'   ggplot2::facet_wrap(~am)
-#' p + theme_rom()
+#' p + theme_aqua()
 #'
 #' @export
 
-theme_rom <- function(base_size = 12, base_family = "") {
+theme_aqua <- function(base_size = 12, base_family = "") {
   theme_bw(base_size = base_size, base_family = base_family) +
     theme(
       axis.text = element_text(size = 8), 
