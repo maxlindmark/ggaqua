@@ -37,7 +37,7 @@ ggplot(d, aes(year, response)) +
   scale_x_continuous(expand = c(0, 0), breaks = scales::pretty_breaks(n = 6)) +
   scale_y_continuous(expand = c(0, 0), breaks = scales::pretty_breaks(n = 5)) +
   theme_aqua() + 
-  labs(y = "Landningar (ton)")
+  labs(y = "Landningar (ton)", x = "")
 ```
 
 <img src="README-figs/example-1.png" width="528" />
