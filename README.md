@@ -38,6 +38,9 @@ ggplot(d, aes(year, response)) +
   scale_y_continuous(expand = c(0, 0), breaks = scales::pretty_breaks(n = 5)) +
   theme_aqua() + 
   labs(y = "Landningar (ton)", x = "")
+  
+# save!
+#ggsave("Fig_1.png", plot = p1, dpi = 300, width = 8, height = 8, units = "cm")
 ```
 
 <img src="README-figs/example-1.png" width="528" />
