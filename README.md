@@ -38,9 +38,31 @@ ggplot(d, aes(year, response)) +
   scale_y_continuous(expand = c(0, 0), breaks = scales::pretty_breaks(n = 5)) +
   theme_aqua() + 
   labs(y = "Landningar (ton)", x = "")
-  
+```
+
+<img src="README-figs/example-1.png" width="528" />
+
+``` r
+
 # save!
 #ggsave("Fig_1.png", plot = p1, dpi = 300, width = 8, height = 8, units = "cm")
 ```
 
-<img src="README-figs/example-1.png" width="528" />
+Another common application of this theme is for the annual report
+“Fiskbarometern”. Here’s an example of how to make a figure for that
+report with the corresponding palette.
+
+``` r
+# a basic"fiskbarometern" style plot
+
+pal <- c("#56B4E9", "#009E73", "#F0E442", "#0072B2", "#E69F00", "#D55E00")
+
+ggplot(d, aes(year, response)) + 
+  geom_bar(stat = "identity", width = 0.6, fill = pal[1]) +
+  scale_x_continuous(expand = c(0, 0), breaks = scales::pretty_breaks(n = 6)) +
+  scale_y_continuous(expand = c(0, 0), breaks = scales::pretty_breaks(n = 5)) +
+  theme_aqua() + 
+  labs(y = "Landningar (ton)", x = "")
+```
+
+![](README-figs/unnamed-chunk-4-1.png)
