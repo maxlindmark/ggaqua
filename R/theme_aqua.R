@@ -31,7 +31,7 @@ theme_aqua <- function(base_size = 12, base_family = "") {
       legend.key = element_rect(fill = "transparent"),
       legend.box.margin = margin(-25,-25,-25,-25), 
       aspect.ratio = 1,
-      plot.margin = unit(c(5.5, 5.5, 20, 5.5), 
+      plot.margin = unit(c(5.5, 10, 20, 5.5), 
                          "points")
     )
 }
